@@ -38,4 +38,5 @@ func loadConfig() {
 		logger.Error("config json parse failed!")
 		os.Exit(2)
 	}
+	logger.Debugf("config json parse: \t%s", config)
 }
