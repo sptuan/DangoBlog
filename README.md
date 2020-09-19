@@ -7,5 +7,11 @@ DangoBlog🍡，中文名团子博客🍡，目前定位为个人练手项目。
 - 多媒体附件管理
 - 搜索和标签系统
 - ...
+
+## 参考和学习资料
+https://github.com/sausheong/gwp
+
+https://books.studygolang.com/gopl-zh/
+
 ## 最后一句话
 开心是第一要务！
