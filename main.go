@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/julienschmidt/httprouter"
+	//"github.com/julienschmidt/httprouter"
 	"net/http"
 	"time"
 )
@@ -23,5 +23,8 @@ func main() {
 		WriteTimeout:   time.Duration(config.WriteTimeOut * int64(time.Second)),
 		MaxHeaderBytes: 1 << 20,
 	}
-	server.ListenAndServe()
+	err := server.ListenAndServe()
+	if err != nil {
+		panic(err)
+	}
 }
