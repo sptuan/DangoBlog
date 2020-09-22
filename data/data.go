@@ -16,7 +16,7 @@ func init() {
 	// note: postgres has registed in drivers
 	Db, err = sql.Open("postgres",
 		"user=dango_admin dbname=dango_blog_dev"+
-			" password=dange_admin_passwd ssl_mode-disable")
+			" password=dange_admin_password sslmode=disable")
 	if err != nil {
 		// TODO: change logger same to package main
 		log.Fatal(err)
