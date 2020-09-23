@@ -13,5 +13,18 @@ https://github.com/sausheong/gwp
 
 https://books.studygolang.com/gopl-zh/
 
+## 版本记录
+### v0.0.1
+跟随 sausheong/gwp 的web教材搭建。
+
+其中账户、文章CRUD逻辑跟随教材实现。
+
+模板部分完全套用教材内容。
+
+#### TODO：
+- 嵌入的Markdown编辑器
+- 多媒体内容上传
+- 移植blog模板
+
 ## 最后一句话
 开心是第一要务！
