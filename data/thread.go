@@ -61,6 +61,7 @@ func (thread *Thread) Posts() (posts []Post, err error) {
 			&post.ThreadId, &post.CreatedAt); err != nil {
 			return
 		}
+		posts = append(posts, post)
 	}
 	rows.Close()
 	return
