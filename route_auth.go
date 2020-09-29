@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./data"
+	"DangoBlog/data"
 	"net/http"
 )
 
