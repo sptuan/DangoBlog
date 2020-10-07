@@ -67,7 +67,7 @@ func authenticate(writer http.ResponseWriter, request *http.Request) {
 func logout(writer http.ResponseWriter, request *http.Request) {
 	cookie, err := request.Cookie("_cookie")
 	if err != http.ErrNoCookie {
-		logger.Warning("[Auth] Logout Failed to get cookie")
+		logger.Infof("[LOGOUT] session: %s", cookie.Value)
 		session := data.Session{Uuid: cookie.Value}
 		session.DeleteByUUID()
 	}
